@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/first-missing-positive/submissions/
+// https://leetcode.com/problems/first-missing-positive/
 // Find first missing positive number in O(n) time and O(1) extra space
 
 /**
