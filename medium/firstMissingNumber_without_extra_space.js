@@ -5,10 +5,10 @@
  * @param {number[]} nums
  * @return {number}
  */
-var firstMissingPositive = function(nums) {
+const firstMissingPositive = function(nums) {
 
-    let startIndex = shiftNegativeAndZero(nums);
-    let LEN = nums.length + 1 - startIndex;
+    const startIndex = shiftNegativeAndZero(nums);
+    const LEN = nums.length + 1 - startIndex;
     
     for(let x = startIndex; x < nums.length; x++) {
         let val = Math.abs(nums[x]);
@@ -30,7 +30,7 @@ var firstMissingPositive = function(nums) {
 function shiftNegativeAndZero(arr) {
 
     function swap(i, j) {
-        let tmp = arr[i];
+        const tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
     }
